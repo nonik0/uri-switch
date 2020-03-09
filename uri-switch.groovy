@@ -2,14 +2,14 @@ preferences {
 	section("Request Info"){
 		input "ip", "text", title: "Internal IP", required: true
 		input "port", "text", title: "Internal Port", required: true
-        input "path", "text", title: "Internal On Path (/path?key=value)", required: true
+                input "path", "text", title: "Internal On Path (/path?key=value)", required: true
 	}
 }
 
 metadata {
 	definition (name: "URI Switch", namespace: "nonik0", author: "Nick Brown") {
 		capability "Switch"      
-        command "toggle"
+                command "toggle"
 	}
 
 	tiles {
